@@ -1,0 +1,235 @@
+body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copa {
+    display: flex;
+    background-color: #2D25A0;
+    height: 677px;
+    width: 1440px;
+}
+
+.copa:hover .copa-area img {
+    transform: skew(10deg, 5deg);
+}
+
+.copa-title {
+    width: 600px;
+    height: 280px;
+    color: white;
+    font-size: 75px;
+    font-weight: 500px;
+    line-height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+
+.copa-area img {
+    width: 600px;
+    height: 450px;
+    position: absolute;
+    top: 153px;
+    left: 800px;
+    transition: transform 2s;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    position: absolute;
+    top: 480px;
+    left: 150px;
+    cursor: pointer;
+    border: none;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-image: linear-gradient(rgb(214, 1, 37), rgb(235, 100, 123));
+}
+
+.fa-arrow-right {
+    margin-left: 10px;
+}
+
+.Database {
+    width: 1440px;
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
+    grid-gap: 0px 33px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.players-database {
+    width: 300px;
+    height: 474px;
+    border: 15px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 84px;
+}
+
+.players {
+    display: flex;
+    text-align: center;
+}
+
+.players:hover .players img {
+    transform: scale(1.5);
+}
+
+.players img {
+    transition: 2s;
+}
+
+.players-database .players img {
+    width: 300px;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+}
+
+.players-info {
+    width: 300px;
+    height: 154px;
+}
+
+.player-name {
+    font-weight: 900px;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.highlights {
+    display: flex;
+}
+
+.highlights-area {
+    width: 466px;
+    height: 309px;
+    position: absolute;
+    top: 3000px;
+    left: 20px;
+}
+
+.highlights-image:hover .highlights-image img {
+    transform: scale(0.5);
+}
+
+.highlights-image img {
+    width: 567px;
+    height: 427px;
+    position: absolute;
+    top: 3200px;
+    left: 750px;
+    transition: transform 2s;
+}
+
+.higlights-button {
+    height: 50px;
+    width: 200px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+}
+
+.highlights-title {
+    width: 500px;
+    height: 120px;
+    color: black;
+    font-size: 55px;
+    font-weight: 500px;
+    line-height: 65px;
+    position: absolute;
+    top: 140px;
+    left: 150px;
+}
+
+.highlights-info {
+    position: absolute;
+    top: 360px;
+    left: 150px;
+}
+
+.football-area {
+    width: 1440px;
+    height: 900px;
+}
+
+.football {
+    margin-bottom: 30px;
+}
+
+.football img:hover {
+    transform: scale(1.5);
+}
+
+.football img {
+    height: 110px;
+    width: 460px;
+    position: absolute;
+    top: 3750px;
+    left: 450px;
+    border-radius: 0px;
+    transition: transform 2s;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 420px;
+    left: 320px;
+    color: gray;
+}
+
+.icon a {
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+.circle-icon {
+    background: rgb(196, 193, 193);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+/*Medi queries*/
+
+
+/*Mobile device*/
+
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+    }
+    .copa-area img {
+        display: flex;
+        flex-direction: column;
+    }
+    .players-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
