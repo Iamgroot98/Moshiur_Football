@@ -93,12 +93,13 @@ button:hover {
     text-align: center;
 }
 
-.players:hover .players img {
-    transform: scale(1.5);
+.players img:hover {
+    transform: scale(0.5);
 }
 
 .players img {
     transition: 2s;
+    cursor: pointer;
 }
 
 .players-database .players img {
@@ -131,8 +132,8 @@ button:hover {
     left: 20px;
 }
 
-.highlights-image:hover .highlights-image img {
-    transform: scale(0.5);
+.highlights-image img:hover {
+    transform: skew(-10deg, -5deg);
 }
 
 .highlights-image img {
@@ -213,6 +214,10 @@ button:hover {
     background: rgb(196, 193, 193);
     padding: 5px;
     border-radius: 50%;
+}
+
+.icon:hover {
+    background: white;
 }
 
 
